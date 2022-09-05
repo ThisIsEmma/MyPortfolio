@@ -1,0 +1,208 @@
+/* My goal is to create an aerial yet sweet and energetic page that would accurately reflect my personnality */ 
+
+/* ------------- STYLING OF SIDE NAVIGATION BAR------------- */
+.sidebar {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #ffae8e; /* #ffae8e */
+    overflow-x: hidden;
+    padding-top: 20px;
+    padding-left: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  .sidebar nav {
+    display: flex;
+    flex-direction: column;
+    padding-top: 6em;
+
+  }
+
+  .sidebar a {
+    text-decoration: none;
+    padding:2em 0 2em 0.5em;
+    color: #fee3d4;
+  }
+
+  .sidebar a:hover {
+    color: #dd3d00;  
+  }
+
+
+  .restofpage {
+    margin-left: 160px; /* Same as the width of the sidenav */
+    padding: 0px 10px;
+  }
+
+/* ------------- STYLING OF BODY ------------- */
+
+/* Opted to have a sans serif font for easy readability and 
+light color as well as wide line height for aerial feeling */
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #fef3ed;
+    line-height: 50px;
+}
+
+/* ------------- STYLING OF HEADER ------------- */
+
+/* Wanted to NAV to be centered. Set the flex as a colum rather than row and set the 
+color to #782a00 for good contrast and easy readability */
+
+
+/* ensured hearder in nav is light and wide, for aerial feeling of page */
+
+#name {
+    display: flex;
+    padding: 2em 0 2em 0;
+    flex-direction: column;
+    font-size: 80px;
+    font-weight: lighter;
+    align-items: center;
+    color: #782a00;
+}
+
+
+
+/* ------------- STYLING OF "a" + "hover" ------------- */
+
+/* set different color for when user hover over a link */
+
+header nav a {
+    color:#782a00;
+    text-decoration: none;   /* removed underline on link */ 
+}
+
+header nav a:hover {
+    color: #d33d00;
+}
+
+.intro a {
+    color:#d33d00;
+    text-decoration: none;   /* removed underline on link */ 
+}
+
+.intro a:hover {
+    color: #ffae8e;
+}
+
+/* ------------- STYLING OF ARTICLES ------------- */
+
+/*  set display to flex, direction: column with different bg color 
+and rounded edged for the border */
+
+/* Section with rounded corder (border-radius: 25px) */ 
+.intro, .skills {
+    font-size: 25px;
+    font-weight: lighter;
+    display: flex;
+    flex-direction: column;
+    background-color:#ffd8c3;
+    align-items: flex-start;
+    margin: 1em;
+    padding: 1.5em;
+    color: #782a00;
+    border-radius: 25px;
+    border-style: outset;
+    border-color: #782a00;
+}
+
+article {
+    box-shadow: 2px 2px 5px 0.5px #782a00;
+}
+
+
+ /* Handling style for "experience" section seperately as would like to add 
+ additional features applicable to this section only */
+
+ .experience {
+    font-size: 25px;
+    font-weight: lighter;
+    display: flex;
+    flex-direction: column;
+    background-color:#ffd8c3;
+    align-items: flex-start;
+    margin: 1em;
+    padding: 1.5em;
+    color: #782a00;
+    border-radius: 25px;
+    border-style: outset;
+    border-color: #782a00;
+}
+
+/* Job title to be displayed in red (#d33d00) in the experience section */
+
+.experience h3 {
+    color:#d33d00;
+    font-weight: lighter;
+ }
+
+
+/* Section with square borders */ 
+
+.aboutme, .education, .contact {
+    font-size: 25px;
+    font-weight: lighter;
+    display: flex;
+    flex-direction: column;
+    background-color:#ffd8c3;
+    align-items: flex-start;
+    margin: 1em;
+    padding: 1.5em;
+    color: #782a00;
+    border-style: outset;
+    border-color: #782a00;
+}
+
+/* Set flex wrap to wrap for the section containing pictured, so that the layout 
+adjust depending on the screen size*/
+
+.aboutme section {
+    display:flex;
+    flex-wrap: wrap;
+ }
+
+
+/* ------------- STYLING OF HEADERS ------------- */
+
+/* Styling all the h1 of the page */ 
+
+#contactme, #skills, #experience, #education, #welcome, #aboutme{
+    
+    display: flex;
+    align-self: flex-end;
+    font-weight: lighter;
+    font-size: 80px;
+    font-family: "Sacramento"; /* Implemented google font "Sacramento" */
+
+}
+
+/* Styling of h2s */ 
+
+.intro h2, h4, .aboutme h2, .experience h2,  .education h2, .skills h2, .contact h2 {
+    font-weight: lighter;
+ }
+
+ Section h2::first-letter {
+    font-family: "Sacramento";
+    font-weight: bold;
+    color:#d33d00;
+ }
+
+/* ------------- STYLING OF FOOTER ------------- */
+
+/* wanted the footer to be at the center with space 
+around so it is not too crowded */
+
+footer {
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2em;
+}
