@@ -159,13 +159,12 @@ article {
     border-color: #782a00;
 }
 
-/* Set flex wrap to wrap for the section containing pictured, so that the layout 
+/*---Section containing pictures---- */
+
+/* Set flex wrap to wrap for the section containing pictures, so that the layout 
 adjust depending on the screen size*/
 
-.aboutme section {
-    display:flex;
-    flex-wrap: wrap;
- }
+
 
 
 /* ------------- STYLING OF HEADERS ------------- */
@@ -184,7 +183,7 @@ adjust depending on the screen size*/
 
 /* Styling of h2s */ 
 
-.intro h2, h4, .aboutme h2, .experience h2,  .education h2, .skills h2, .contact h2 {
+.intro h2, h4, .aboutme h2, .aboutme h3, .experience h2,  .education h2, .skills h2, .contact h2 {
     font-weight: lighter;
  }
 
